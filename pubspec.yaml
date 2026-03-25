@@ -22,3 +22,6 @@ flutter:
   - family: DejaVuSans
     fonts: 
     - asset: assets/fonts/font1.ttf
+
+  assets:
+  - assets/images/
