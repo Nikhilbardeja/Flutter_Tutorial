@@ -1,5 +1,6 @@
 import 'package:first_application/Buttons.dart';
 import 'package:first_application/container_screen.dart';
+import 'package:first_application/row_column.dart';
 import 'package:first_application/screens/home/HomeScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -12,6 +13,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: ContainerScreen(), debugShowCheckedModeBanner: false);
+    return MaterialApp(home: ColumnRow(), debugShowCheckedModeBanner: false);
   }
 }
