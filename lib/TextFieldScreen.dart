@@ -40,6 +40,7 @@ class _Textfieldscreen extends State<Textfieldscreen>{
 				),
 				SizedBox(height: 10),
 				TextField(
+          obscureText: false,
 					maxLines: 7,
 					decoration: InputDecoration(
 						hintText: "Describe yourself",
