@@ -1,4 +1,5 @@
 import 'package:first_application/ListViewAndListTile.dart';
+import 'package:first_application/ResponsiveLayout.dart';
 import 'package:first_application/row_column.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Listviewandlisttile(),
+      home: Responsivelayout(),
       debugShowCheckedModeBanner: false,
     );
   }
