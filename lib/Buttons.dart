@@ -37,21 +37,29 @@ class ButtonsState extends State<Buttons> {
       //       iconAlignment: IconAlignment.end,
       //     ),
       //   ),
+
+
       //   body: TextButton(
       //     onPressed: () {},
       //     onLongPress: () {},
       //     child: Text("Mera Button"),
       //   ),
-      body: IconButton(
-        onPressed: () {
-          setState(() {
-            centerTitle = !centerTitle;
-          });
-        },
-        icon: Icon(Icons.home, size: 30),
-        style: IconButton.styleFrom(backgroundColor: Colors.amber),
-        color: Colors.blueGrey,
-      ),
+
+
+      // body: IconButton(
+      //   onPressed: () {
+      //     setState(() {
+      //       centerTitle = !centerTitle;
+      //     });
+      //   },
+      //   icon: Icon(Icons.home, size: 30),
+      //   style: IconButton.styleFrom(backgroundColor: Colors.amber),
+      //   color: Colors.blueGrey,
+      // ),
+
+      body: OutlinedButton(onPressed: (){}, child: Text("Outlined Button")),
+
+      floatingActionButton: FloatingActionButton(onPressed: (){}, child: Icon(Icons.add))
     );
   }
 }
