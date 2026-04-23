@@ -1,4 +1,4 @@
-import 'package:first_application/navigation/first_screen.dart';
+import 'package:first_application/navigation/routes_screen.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -14,7 +14,7 @@ class SplashScreen extends StatelessWidget {
               context,
               MaterialPageRoute(
                 builder: (context) {
-                  return FirstScreen();
+                  return RoutesScreen();
                 },
               ),
             );

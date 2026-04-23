@@ -1,17 +1,14 @@
-import 'package:first_application/navigation/first_screen.dart';
+import 'package:first_application/navigation/home_screen.dart';
 import 'package:flutter/material.dart';
 
-class SecondScreen extends StatelessWidget {
-  final String title;
-  const SecondScreen({super.key, required this.title});
+class ProfileScreen extends StatelessWidget {
+  final String name;
+  const ProfileScreen({super.key, required this.name});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Second Screen $title"),
-        backgroundColor: Colors.amber,
-      ),
+      appBar: AppBar(title: Text("Hello $name"), backgroundColor: Colors.amber),
 
       body: Center(
         child: Column(
@@ -31,7 +28,7 @@ class SecondScreen extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return FirstScreen();
+                      return HomeScreen();
                     },
                   ),
                 );

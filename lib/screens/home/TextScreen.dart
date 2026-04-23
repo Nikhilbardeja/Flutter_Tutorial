@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class TextScreen extends StatefulWidget {
+  const TextScreen({super.key});
 
   @override
   State<StatefulWidget> createState() {
-    return HomeScreenState();
+    return TextScreenState();
   }
 }
 
-class HomeScreenState extends State<HomeScreen> {
+class TextScreenState extends State<TextScreen> {
   MaterialColor color = Colors.blue;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home"),
+        title: Text("Text"),
         backgroundColor: color,
         centerTitle: true,
       ),

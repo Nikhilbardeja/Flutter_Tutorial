@@ -1,15 +1,15 @@
-import 'package:first_application/navigation/second_screen.dart';
-import 'package:first_application/navigation/third_screen.dart';
+import 'package:first_application/navigation/profile_screen.dart';
+import 'package:first_application/navigation/settings_screen.dart';
 import 'package:flutter/material.dart';
 
-class FirstScreen extends StatelessWidget {
-  const FirstScreen({super.key});
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("First Screen"),
+        title: Text("Home Screen"),
         backgroundColor: Colors.indigo,
       ),
 
@@ -24,7 +24,7 @@ class FirstScreen extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return SecondScreen(title: "Nacho re");
+                      return ProfileScreen(name: "Nacho re");
                     },
                   ),
                 );
@@ -38,7 +38,7 @@ class FirstScreen extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return ThirdScreen();
+                      return SettingsScreen(name: "Raju", age: 50);
                     },
                   ),
                 );
