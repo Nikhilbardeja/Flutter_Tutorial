@@ -1,4 +1,6 @@
 import 'package:first_application/OtherWidgets.dart';
+import 'package:first_application/SplashScreen.dart';
+import 'package:first_application/navigation/first_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: OtherWidgets(),
+      home: SplashScreen(),
       debugShowCheckedModeBanner: false,
       // darkTheme: ThemeData.dark().copyWith(),
       // dartTheme: ThemeData(
