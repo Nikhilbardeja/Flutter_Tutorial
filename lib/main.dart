@@ -4,6 +4,7 @@ import 'package:first_application/navigation/profile_screen.dart';
 import 'package:first_application/navigation/routes_screen.dart';
 import 'package:first_application/navigation/settings_screen.dart';
 import 'package:first_application/popup_dropdown_menu.dart';
+import 'package:first_application/tabs_screen.dart';
 import 'package:first_application/utils/route_helper.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: PopupDropdownMenu(),
+      home: TabsScreen(),
       debugShowCheckedModeBanner: false,
       // initialRoute: '/',
       // routes: myRoutes(),
