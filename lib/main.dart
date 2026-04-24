@@ -1,3 +1,4 @@
+import 'package:first_application/alert_dialog_screen.dart';
 import 'package:first_application/navigation/home_screen.dart';
 import 'package:first_application/navigation/profile_screen.dart';
 import 'package:first_application/navigation/routes_screen.dart';
@@ -15,11 +16,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // home: SplashScreen(),
+      home: AlertDialogScreen(),
       debugShowCheckedModeBanner: false,
-      initialRoute: '/',
-      routes: myRoutes(),
-      onGenerateRoute: (RouteSettings settings) => myGenerateRoutes(settings),
+      // initialRoute: '/',
+      // routes: myRoutes(),
+      // onGenerateRoute: (RouteSettings settings) => myGenerateRoutes(settings),
 
       // darkTheme: ThemeData.dark().copyWith(),
       // dartTheme: ThemeData(

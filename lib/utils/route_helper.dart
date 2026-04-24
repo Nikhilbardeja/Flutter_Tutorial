@@ -1,3 +1,4 @@
+import 'package:first_application/alert_dialog_screen.dart';
 import 'package:first_application/navigation/home_screen.dart';
 import 'package:first_application/navigation/profile_screen.dart';
 import 'package:first_application/navigation/routes_screen.dart';
@@ -5,7 +6,7 @@ import 'package:first_application/navigation/settings_screen.dart';
 import 'package:flutter/material.dart';
 
 myRoutes() => {
-  '/': (context) => RoutesScreen(),
+  '/': (context) => AlertDialogScreen(),
   '/home': (context) => HomeScreen(),
 };
 
