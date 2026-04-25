@@ -1,6 +1,9 @@
-import 'package:first_application/navigation/drawer_bottombar_nav.dart';
-import 'package:first_application/tabs_screen.dart';
+import 'package:first_application/navigation/home_screen.dart';
+import 'package:first_application/providers/app_provider.dart';
+import 'package:first_application/providers/my_provider.dart';
+import 'package:first_application/widgets/my_provider_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,10 +14,36 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: DrawerBottombarNav(),
-      debugShowCheckedModeBanner: false,
-      // initialRoute: '/',
+    return ChangeNotifierProvider(
+      create: (context) => AppProvider(),
+      child: Consumer<AppProvider>(
+        builder: (context, provider, child) => MaterialApp(
+          themeMode: provider.mode,
+          darkTheme: ThemeData.dark(),
+          home: ChangeNotifierProvider(
+            create: (context) => MyProvider(),
+            child: MyProviderScreen(),
+          ),
+          debugShowCheckedModeBanner: false,
+        ),
+      ),
+    );
+  }
+}
+
+// this is how to apply notifier on a specific Screen
+
+// return MaterialApp(
+    //   home: ChangeNotifierProvider(
+    //     create: (context) => MyProvider(),
+    //     child: MyProviderScreen(),
+    //   ),
+    //   debugShowCheckedModeBanner: false,
+    // );
+
+// arguments and settings for theme in MaterialApp Class
+
+// initialRoute: '/',
       // routes: myRoutes(),
       // onGenerateRoute: (RouteSettings settings) => myGenerateRoutes(settings),
 
@@ -42,6 +71,3 @@ class MyApp extends StatelessWidget {
       //     ),
       //     // scaffoldBackgroundColor: Colors.black,
       //   ),
-    );
-  }
-}

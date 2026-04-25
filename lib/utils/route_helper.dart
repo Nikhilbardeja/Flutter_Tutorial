@@ -1,4 +1,4 @@
-import 'package:first_application/alert_dialog_screen.dart';
+import 'package:first_application/widgets/alert_dialog_screen.dart';
 import 'package:first_application/navigation/home_screen.dart';
 import 'package:first_application/navigation/profile_screen.dart';
 import 'package:first_application/navigation/routes_screen.dart';

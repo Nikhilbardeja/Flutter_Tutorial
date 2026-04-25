@@ -1,4 +1,4 @@
-import 'package:first_application/chat_tab.dart';
+import 'package:first_application/widgets/chat_tab.dart';
 import 'package:flutter/material.dart';
 
 class TabsScreen extends StatefulWidget {
